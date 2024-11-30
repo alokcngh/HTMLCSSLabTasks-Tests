@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+<body>
+    <h1>Admission Form</h1>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Full Name:</label><br>
+                    <input type="text" placeholder="Enter Your full Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br> <label>Date of Birth:</label><br>
+                    <input type="date" >
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br> <label for="gender">Gender:</label><br>
+                    <input type="radio" id="Male" name="gender"/>Male
+                    <input type="radio" id="Female" name="gender"/>Female
+                    <input type="radio" id="Other" name="gender"/>Other
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br> <label>Address:</label><br>
+                    <textarea rows="4" cols="50" placeholder="Enter our Address"></textarea>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Academic Information</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Highest Qualification:</label><br>
+                    <select>
+                        <option>Select Your Qualification</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br><label>Percentage/CGPA:</label><br>
+                    <input type="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br><label>Course Applying For:</label><br>
+                    <select>
+                        <option>Select a course</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Parent/Guardian Information</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Parent/Guardian Name:</label><br>
+                    <input type="text" placeholder="Enter Parent/Guardian Name">
+                </td>
+                <tr>
+                    <td>
+                        <br><label>Parent/Guardian Contact:</label><br>
+                        <input type="text" placeholder="Enter Contact number">
+                    </td>
+                </tr>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset>
+        <legend>Emergency Contact Information</legend>
+        <table>
+            <tr>
+                <td>
+                    <label>Emergency Contact Name:</label><br>
+                    <input type="text" placeholder="Enter Emergency Contact Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   <br> <label>Emergency Contact Number:</label><br>
+                    <input type="number" placeholder="Enter Emergency Contact Number" maxlength="20">
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    <input type="submit" value="submit">
+</body>
+</html>

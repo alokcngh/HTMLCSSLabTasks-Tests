@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body bgcolor="aqua">
+    <center>
+    <h1>Employee Registration Form</h1>
+    <hr color="red">
+    <form name="RegForm" method="post" action="success.html" target="_blank">
+        <table border="1">
+            <tr>
+                <td><label for="ename">Employee Name</label></td>
+                <td><input type="text" id="ename" name="ename" maxlength="30" placeholder="Enter Employee Name"/></td>
+            </tr>
+            <tr>
+                <td><label for="ename">User Name</label></td>
+                <td><input type="text" id="uname" name="uname" maxlength="30" placeholder="Enter Employee User Name"/></td>
+            </tr>
+            <tr>
+                <td><label for="education">Education</label></td>
+                <td><input type="checkbox" id="graduation" name="graduation" vale="graduation" checked>Graduation</td>
+                   <td> <input type="checkbox" id="postgraduation" name="postgraduation" vale="graduation">Post Graduation
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" placeholder="Enter Email id">Graduation
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><label for="resume">Upload Resume</label></td>
+                <td><input type="file" >
+                    
+                </td>
+            </tr>
+            <tr>
+                <td><label for="exp">Exp in year</label></td>
+                <td><input type="range" min="0" max="5" ></td>
+            </tr>
+            <tr>
+                <td><label for="exp">Previous Company url</label></td>
+                <td><input type="url"  ></td>
+            </tr>
+            <tr>
+                <td><label for="image">Photo </label></td>
+                <td><input type="image" src="Images/dhoni.jpg"  ></td>
+            </tr>
+        </tr>
+            <tr>
+                <td><label for="pwd">Password</label></td>
+                <td><input type="password" id="pwd" name="pwd" maxlength="20" placeholder="Enter Password"/></td>
+            </tr>
+            <tr>
+                <td><label for="age">Age</label></td>
+                <td><input type="number" id="age" name="age" maxlength="3" placeholder="Enter Employee Age"/></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender:</label></td>
+                      <td><input type="radio" id="male" name="gender" >Male
+                      <input type="radio" id="female" name="gender" >Female
+                      <input type="radio" id="other" name="gender" >Other  
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea id="address" name="address" placeholder="Enter Address Here" rows="5" cols="40"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td>
+                    <select  id="city" name="city">
+                        <option value="hyd">Hyderabad</option>
+                        <option value="bng">Banglore</option>
+                        <option value="dli">Delhi</option>
+                        <option value="noida">Noida</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td></td>
+                <td><br><input type="submit" id="btnsubmit"  value="Submit"/> &nbsp;&nbsp;<input type="submit" id="btnreset"  value="Clear"/>
+                <button id="btnupload" name="btnupload" value="Upload">Upload</button></td>
+            </tr>
+        </table>
+    </form>
+</center>
+</body>
+</html>

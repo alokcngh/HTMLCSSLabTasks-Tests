@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2+p{
+            border:1px solid;
+            padding:10px;
+            border-color: grey;
+            font-style: italic;
+            color:grey;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: red;
+            font-style: italic;
+        }
+        .f{
+            border: 1px solid;
+            border-color: black;
+            padding: 10px;
+            color:purple; 
+        }
+        .b::before{
+            content:"Span:";
+            color: red;  
+        }
+        .b::after{
+            content:"This is an adjacent sibling span";
+            color: blue;
+        }
+        h3+span{
+            border: 1px solid;
+            border-color: black;
+            padding: 10px;           
+        }
+        h3+p{
+            margin: px;
+            border:1px solid;
+            padding:10px;
+            border-color: grey;
+            font-style: italic;
+            color:grey;
+        }
+        h2~span{
+            color: blue;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        span::before{
+            content:"Span:";
+            color: red;
+        }
+        h2~p{
+            border: 1px solid;
+            padding: 10px;
+        }
+        .a{
+            background-color: aquamarine;
+            border: 1px solid;
+            border-color: black;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+            .a::before{
+            content:"Start of div:";
+            color: red;
+        }
+        .a::after{
+            content:" End of div";
+            color: red;
+        }
+        #hoverEffect:hover {      /* ID Selecton  with pseudo CLass*/
+			background-color: pink;
+		}
+        /* input[type="email"]
+        {
+            width: 300px;
+        } */
+
+		[type="text"] {			 /*Attribute Selector*/
+			border: 3px solid red;
+			width: 400px;
+		}
+    </style>
+</head>
+<body>
+    <h2>Adjacent sibling example</h2>
+    <p>This is a paragraph adjacent to the heading above it </p>
+    <h2>Adjacent sibling example 2</h2>
+    <p>This is another adjacent paragraph </p>
+    <h3 class="f">Adjacent sibling example 3</h3>
+    <span class="b"></span>
+    <h3 class="f">Adjacent sibling example 4</h3>
+    <p>This is another adjacent paragraph </p>
+    <h2 style="color: brown;">General sibling example1</h2>
+    <p>This paragraph is genral sibling of the heading </p>
+    <span>This span is also a general sibling</span>
+    <p>Another paragraph sibling</p>
+    <div class="a" id="hoverEffect"> Hover over this box to see the effect </div>
+    <div class="a" id="hoverEffect"> Hover over another box </div>
+    <a id="hoverEffect" style="color: blue;"><u>hover over this link to see the affect</u></a>
+    <input type="text" placeholder="focus on  this input field">
+    <input type="text" placeholder="focus on another input field">
+</body>
+</html>

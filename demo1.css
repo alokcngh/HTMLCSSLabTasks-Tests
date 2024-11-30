@@ -1,0 +1,14 @@
+/*External Css Demo*/
+body{
+    background-color: beige;
+}
+h1{
+    background-color: blue;
+    color:white;
+    text-align: center;
+}
+p{
+    background-color: pink;
+    color:red;
+    text-align: center;  
+}

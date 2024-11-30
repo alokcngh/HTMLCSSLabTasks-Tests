@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continue Statement Demo</title>
+</head>
+<body>
+    <h1>Continue Statement Demo</h1>
+    <h1>7,18 and 11 are skipped</h1>
+    <script>
+        
+        for(let a=1;a<=20;a++)
+        {
+            if(a==11 || a==7 || a==18){
+                continue;
+            }
+            document.write(a+". Hello World!<br>");
+            
+        }
+    </script>
+</body>
+</html>

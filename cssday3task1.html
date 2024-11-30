@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border:1px solid;
+            padding:10px;
+            border-color: grey;
+            font-style: italic;
+            color:grey;
+        }
+        p::first-letter{
+            font-size: 30px;
+            color: red;
+            font-style: italic;
+        }
+        
+        h4{
+            color: brown;
+        }
+        
+        .a::before{
+            content:"Start of div:";
+            color: red;
+        }
+        .a::after{
+            content:" End of div";
+            color: red;
+        }
+        div{
+            background-color: aquamarine;
+            border: 1px solid;
+            border-color: black;
+            padding: 10px;
+        }
+        .b::before{
+            content:"Span:";
+            color: red;
+           
+        }
+        .n1{
+            border: 1px solid;
+            border-color: black;
+            padding: 10px;
+            color: blue;
+            background-color: white;
+            width: 350px;
+        }
+        .c::before{
+            content:"Start of div:";
+            color: red;
+        }
+        .c::after{
+            content:" End of div";
+            color: red;
+        }
+        .c{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+        }
+        .d::before{
+            content:"Start of div:";
+            color: red;
+        }
+        .d::after{
+            content:" End of div";
+            color: red;
+        }
+        .d{
+            width: 150px;
+            height: 150px;
+            padding: 10px;
+        }
+        .e::before{
+            content:"Span:";
+            color: red;
+        }
+        .e{
+            border: 1px solid;
+            border-color: black;
+            padding: 10px;
+            color:green;
+        }
+        .f{
+            border: 1px solid;
+            border-color: black;
+            padding: 10px;
+            color:green; 
+            font-style: italic;
+        }
+        .g::before{
+            content:"Start of div:";
+            color: red;
+        }
+
+        
+        #div1{
+            background-color: pink;
+            width: 150px;
+            padding: 20px;
+            height: 150px;
+        }
+        .g::after{
+            content:" End of div";
+            color: red;
+        }
+        #d{
+            
+            height: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS selectors Demo</h3>
+    <p>This is a paragraph styled using an element selector</p>
+    <h4>This is a heading styled using element selctor</h4>
+    <p>Another paragraph styled using an same selector</p>
+    <div class="a"> This is dv styled using and element selector. End of Div</div> 
+    <div class="n1">
+    <span class="b">This is a span styled using elememnt selector</span>
+</div>
+    <div class="c">This is a div styled using elememnt selector</div><br>
+    <div class="d">Another div styled using elememnt selector</div>
+    <p>This is a paragraph styled using an class selector</p>
+    <span class="e">This is a span styled using class selector</span>
+    <h4 class="f">This is a heading styled using class selector</h4>
+    <div id="div1" class="g">This is a div styled using ID selector</div><br>
+    <div id="d" class="g">Another div styled using id selector</div>
+</body>
+</html>
